@@ -1,0 +1,41 @@
+*{
+  font-family: 'Courgette', cursive;
+}
+
+h1{
+  font-family: 'Arizonia', cursive;
+}
+.row{
+  margin:40px;
+}
+.card{
+  
+  padding-top: 50px;
+  width: 100%;
+
+}
+
+.bg_content{
+  background-image: url(./images/pet.jpg);
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.content{
+  padding: 200px;
+  color:black;
+
+}
+.bg_content button{
+  border-radius: 20px;
+  background-color: rgb(54, 99, 214);
+  width:200px;
+  height:50px;
+  
+}
+footer{
+  background-color:white;
+  
+ 
+}
