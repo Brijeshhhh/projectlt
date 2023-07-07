@@ -177,7 +177,7 @@
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link fw-bold py-1 px-1 active" aria-current="page" href="#">Home</a>
             <a class="nav-link fw-bold py-1 px-1" href="#">Features</a>
-            <a class="nav-link fw-bold py-1 px-1" href="#">Contact</a>
+            <a class="nav-link fw-bold py-1 px-1" href="#section4">Contact</a>
           </nav>
         </div>
       </header>
@@ -255,7 +255,7 @@
     </div>
   </section> 
 <!--section4-->
-<div class="row">
+<div id="section4" class="row">
   <div class="col-sm-6">
     <div class="card">
       
@@ -266,13 +266,26 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
+  <div title="--section4--" class="col-sm-6">
     <div class="card">
       
       <div class="card-body">
-        <h5 class="card-title">CONTACT US</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        
+        <p class="card-text">Fill the following form to contact us</p>
+        <form  action="submit_form.html" method="POST" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mobile">Mobile number:</label>
+            <input type="text" id="mobile" name="mobile" ><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30" required></textarea><br><br>
+        </form >
+        <a href="#" class="btn btn-primary">submit</a>
       </div>
     </div>
   </div>
