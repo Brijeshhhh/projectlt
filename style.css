@@ -1,41 +1,110 @@
-*{
-  font-family: 'Courgette', cursive;
+* {
+  font-family: "Courgette", cursive;
+  font-size: 20px;
 }
 
-h1{
-  font-family: 'Arizonia', cursive;
+/*font-family: 'Cookie', cursive;*/
+
+h1 {
+  font-family: "Arizonia", cursive;
+  margin-left: 70px;
+  margin-top: 7px;
+  padding-bottom: 8px;
 }
-.row{
-  margin:40px;
+.input-group {
+  width: 250px;
+  margin: 20px;
 }
-.card{
-  
+a {
+  margin-left: 10px;
+
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.row {
+  margin: 40px;
+}
+.card {
   padding-top: 50px;
   width: 100%;
-
 }
 
-.bg_content{
-  background-image: url(./images/pet.jpg);
-  
+.bg_content {
+  background-image: url(./images/productimg.jpeg);
+
   background-size: cover;
   background-position: center;
 }
 
-.content{
-  padding: 200px;
-  color:black;
-
+.content {
+  padding: 100px;
+  color: black;
 }
-.bg_content button{
+.bg_content button {
   border-radius: 20px;
   background-color: rgb(54, 99, 214);
-  width:200px;
-  height:50px;
-  
+  width: 200px;
+  height: 50px;
 }
-footer{
-  background-color:white;
-  
- 
+footer {
+  background-color: white;
+
+  color: black;
+}
+.logo {
+  display: block;
+  margin-right: 40px;
+  position: fixed;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+
+  height: 60px;
+  width: 60px;
+}
+.logo2 {
+  margin-top: 7px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+
+  height: 30px;
+  width: 30px;
+}
+.card-text li {
+  display: flex;
+  align-items: start;
+  font-size: 24px;
+}
+
+.social-icons {
+  display: inline-flex;
+  margin-right: 15px;
+}
+i {
+  color: blueviolet;
+}
+footer {
+  background-color: gainsboro;
+  margin: 30px;
+}
+#card-1 {
+  background-image: url("./images/productimage.jpeg");
+  background-size: cover;
+}
+#card-2 {
+  background-image: url("./images/product2.jpg");
+  background-size: cover;
+}
+#card-3 {
+  background-image: url("./images/product3.jpg");
+  background-size: cover;
+}
+
+#dropdown {
+  background-color: white;
+  z-index: 1000;
+  margin-top: 80px;
+  margin-left: 750px;
+  align-items: center;
 }

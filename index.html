@@ -14,6 +14,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/090b4c7751.js" crossorigin="anonymous"></script>
 </head>
 <body>
   
@@ -174,7 +178,19 @@
       <header class="mb-auto">
         <div>
           <h1 class="float-md-start mb-0">CUTE PAW</h1>
+          <img class="logo" src="./images/download.jpeg" alt="logo">
+          
           <nav class="nav nav-masthead justify-content-center float-md-end">
+<!--search bar-->
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+</svg>
+              </span>
+              <input type="text" class="form-control" placeholder="search" aria-label="Input group example" aria-describedby="basic-addon1" fdprocessedid="jb1bct" onclick="searchEvent()">
+            </div>
+            <!--nav items-->
             <a class="nav-link fw-bold py-1 px-1 active" aria-current="page" href="#section1">Home</a>
             <a class="nav-link fw-bold py-1 px-1" href="#section2">Products</a>
             <a class="nav-link fw-bold py-1 px-1" href="#section3">Pets</a>
@@ -182,10 +198,19 @@
             <a class="nav-link fw-bold py-1 px-1" href="#section5">About-Us</a>
             
           </nav>
+          <div id="textField1" style="display: none">
+          <ul id="dropdown" class="dropdown-menu  d-grid  rounded-3  shadow " data-bs-theme="dark">
+            <li><a class="dropdown-item rounded-2 " href="#section1">pets</a></li>
+            <li><a class="dropdown-item rounded-2" href="#section2">food</a></li>
+            <li><a class="dropdown-item rounded-2" href="#section2">accessories</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item rounded-2" href="#section2">medical care</a></li>
+          </ul>
+        </div>
         </div>
       </header>
       <!--header image-->  
-      <img src="./images/pet.jpg"  cls="img-fluid" alt="petsimage">
+      <img src="./images/bannerimage.jpg"  cls="img-fluid" alt="petsimage">
       <!--section1-->  
      
       
@@ -195,17 +220,24 @@
             
             <div class="card-body">
               <img src="./images/pet.jpg" class="card-img-top" alt="sunflower">
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">CONTACT US</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
           <div class="card">
-            
+          
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Buy Pets and everything you need for your pet</h5>
+              <p>buy our products by contacting us</p>
+              <ul class="card-text">
+                <li>PETS</li>
+                <li>FOOD</li>
+                <li>BELTS</li>
+                <li>NUTRITION SUPPLIES</li>
+                <li>MEDICALS</li>
+              </ul>
+              <a href="#" class="btn btn-primary">CONTACT US</a>
             </div>
           </div>
         </div>
@@ -214,32 +246,36 @@
 <!--section2-->
 <div id="section2" class="row">
   <div class="col-sm-4">
-    <div class="card">
+    <div  class="card">
       
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div  id="card-1" class="card-body">
+        <h5 class="card-title">Food</h5>
+        <p class="card-text">we supply all nutritious food that are good for the health of your pets.</br>
+          contact us to order</p>
+        <a href="#section4" class="btn btn-primary">contact us</a>
       </div>
     </div>
+
   </div>
+
   <div class="col-sm-4">
     <div class="card">
       
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div id="card-2"class="card-body">
+        <h5 class="card-title">Accesories</h5>
+        <p class="card-text">you can buy all the accessories like belt,food bowl,play toys,pet house,nest contact us to order</p>
+        <a href="#section4" class="btn btn-primary">contact us</a>
       </div>
     </div>
   </div>
+
   <div class="col-sm-4">
     <div class="card">
       
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div id="card-3" class="card-body">
+        <h5 class="card-title">Medicals</h5>
+        <p class="card-text">you can purchase all the medical products from us for your pets,contact us to order now</p>
+        <a href="#section4" class="btn btn-primary">contact us</a>
       </div>
     </div>
   </div>
@@ -250,7 +286,7 @@
   <section id="section3" class="bg_content">
     <div class="content">
       <h2>PETS </h2>
-      <p> Pets have a rich history that dates back thousands of years. In ancient Egypt, cats were revered and considered sacred animals. They were cherished as symbols of good fortune and protection. Dogs, on the other hand, were valued for their loyalty and utility, serving as hunting companions and guards in various cultures. During the Middle Ages, pets became increasingly popular among nobility and royalty. Dogs, cats, birds, and even exotic creatures adorned the estates of the elite. These pets provided not only companionship but also a sense of status and prestige. In recent centuries, pets have become more widely embraced as cherished members of the family. People have opened their homes and hearts to a diverse array of pets, including dogs, cats, birds, fish, small mammals, and reptiles. The modern pet industry has flourished, offering a wide range of pet care products, accessories, and services to meet the unique needs of different species.
+      <p> Pets have a rich history that dates back thousands of years. In ancient Egypt, cats were revered and considered sacred animals. They were cherished as symbols of good fortune and protection. Dogs, on the other hand, were valued for their loyalty and utility, serving as hunting companions and guards in various cultures. During the Middle Ages, pets became increasingly popular among nobility and royalty. Dogs, cats, birds, and even exotic creatures adorned the estates of the elite.People have opened their homes and hearts to a diverse array of pets, including dogs, cats, birds, fish, small mammals, and reptiles. The modern pet industry has flourished, offering a wide range of pet care products, accessories, and services to meet the unique needs of different species.
       </p>
       <p>
         Pets come in all shapes, sizes, and species, each with their unique qualities and charms. Dogs, known for their unwavering loyalty and playful nature, have earned the title of "man's best friend." They make excellent companions, providing companionship, protection, and endless moments of laughter and love.
@@ -279,27 +315,40 @@
         <p class="card-text">Fill the following form to contact us</p>
         <form  action="submit_form.html" method="POST" >
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" required/><br><br>
     
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required/><br><br>
 
             <label for="mobile">Mobile number:</label>
-            <input type="text" id="mobile" name="mobile" ><br><br>
+            <input type="text" id="mobile" name="mobile" required/><br><br>
     
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="30" required></textarea><br><br>
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">SUBSCRIBE</label><br><br>
+
         </form >
-        <a href="#" class="btn btn-primary">submit</a>
+        <button id="submit" class="btn btn-primary" onclick="clickEvent()">submit</button>
+        
+
+<div id="textField" style="display: none">
+  thankyou for contacting us we will reply you very soon!,continue shopping
+    
+</div>
       </div>
     </div>
   </div>
 </div>
 <!--section-5-->
-<footer  class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+<footer >
+ 
   <div id="section5" class="container">
+
     <div class="row">
+      
       <div class="col-md-4">
+        <img class="logo2" src="./images/download.jpeg" alt="logo">
         <h3>About Us</h3>
         <p> Your ultimate destination for all things pet-related! At CUTEPAW.com , we understand that pets are more than just animals; they are cherished members of the family. With a deep love and passion for animals, we strive to provide a delightful and enriching experience for both pets and their owners.</p>
       </div>
@@ -313,15 +362,17 @@
       </div>
       <div class="col-md-4">
         <h3>Follow Us</h3>
-        <ul class="social-icons">
-          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <ul class="social-icons"  style="list-style: none;">
+          <li><a href="#"><i class="fa-brands fa-facebook" ></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
 </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
